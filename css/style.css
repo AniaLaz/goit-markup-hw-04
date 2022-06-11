@@ -75,7 +75,7 @@ img {
 .logotype {
     display: block;
     margin-right: 93px;
-    padding: 32px 0;
+    padding: 24px 0;
 
     margin-right: 93px;
 
@@ -276,6 +276,7 @@ img {
 }
 
 .about-title {
+    margin-bottom: 10px;
 
     font-size: 14px;
     line-height: 16px;
@@ -286,7 +287,7 @@ img {
 }
 
 .about-text {
-    margin-top: 10px;
+
     max-width: 270px;
 
 
@@ -352,6 +353,7 @@ img {
 }
 
 .team-post-title {
+    margin-bottom: 10px;
 
     font-weight: 500;
     font-size: 16px;
@@ -364,7 +366,6 @@ img {
 
 
 .team-text {
-    margin-top: 10px;
     margin-bottom: 16px;
 
     font-size: 16px;
@@ -379,7 +380,7 @@ img {
     width: 44px;
     height: 44px;
     margin-right: 10px;
-    fill: var(--icon-color);
+    fill: currentColor;
 }
 
 .masters-soc-item:last-child {
@@ -396,6 +397,7 @@ img {
     background-color: var(--background-color);
     align-items: center;
     justify-content: center;
+    fill: var(--icon-color);
 }
 
 .masters-soc-link:hover {
@@ -425,18 +427,23 @@ img {
     display: flex;
 }
 
+.client-link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-color);
+    align-items: center;
+    justify-content: center;
+    fill: var(--icon-color)
+}
+
 .client-item {
     box-sizing: border-box;
     display: flex;
-    align-items: center;
-    justify-content: center;
 
-    width: 170px;
-    height: 92px;
 
-    border: 1px solid var(--icon-color);
     margin-right: 30px;
-    fill: var(--icon-color)
+
 }
 
 .client-item:last-child {
@@ -447,8 +454,8 @@ img {
     fill: currentColor
 }
 
-.client-item:hover,
-.client-item:focus {
+.client-link:hover,
+.client-link:focus {
     border-color: var(--accent-color);
     fill: var(--accent-color);
 }
@@ -465,6 +472,7 @@ img {
 
 .footer-container {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-fiorst-logotype {
@@ -514,7 +522,6 @@ img {
 }
 
 .footer-join-title {
-    margin-top: 12px;
     margin-bottom: 20px;
 
     font-family: 'Roboto';
@@ -528,8 +535,6 @@ img {
     color: #FFFFFF;
 }
 
-
-
 .join-item {
     width: 44px;
     height: 44px;
@@ -537,10 +542,14 @@ img {
     fill: var(--accent-second-color);
 }
 
+.join-icon {
+    fill: var(--accent-second-color);
+}
+
+
 .join:last-child {
     margin-right: 0;
 }
-
 
 
 .join-link {
@@ -598,12 +607,15 @@ img {
 .portfolio-button.portfolio-button-oll {
     color: var(--accent-second-color);
     background: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
 }
 
 .portfolio-button:hover,
 .portfolio-button:focus {
     color: var(--accent-second-color);
     background: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* ---------------------gallery--------------- */
@@ -617,8 +629,6 @@ img {
     font-family: 'Roboto';
     box-sizing: border-box;
     width: calc((100% - 60px) / 3);
-
-
 }
 
 .gallery-name {
@@ -627,7 +637,6 @@ img {
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
-
 }
 
 
@@ -647,4 +656,13 @@ img {
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--text-color);
+}
+
+.gallery-item-link:hover,
+.gallery-item-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.gallery-item-link {
+    display: block;
 }
