@@ -400,7 +400,8 @@ img {
     fill: var(--icon-color);
 }
 
-.masters-soc-link:hover {
+.masters-soc-link:hover,
+.masters-soc-link:focus {
     fill: var(--accent-second-color);
     background-color: var(--accent-color);
 }
@@ -562,7 +563,8 @@ img {
     justify-content: center;
 }
 
-.join-link:hover {
+.join-link:hover,
+.join-link:focus {
     fill: var(--accent-second-color);
     background-color: var(--accent-color);
 }
